@@ -20,6 +20,7 @@ function removeTransition (e) {
     if(e.propertyName !== 'transform') return
     this.classList.remove('playing')
 }
+
 let keys = document.querySelectorAll('.key')
 keys.forEach(key => 
     key.addEventListener('transitionend', removeTransition))
